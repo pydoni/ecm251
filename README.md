@@ -10,3 +10,11 @@ Repositorio da matéria LP-1
 - Java
 - Python
 - C
+- Dart
+- Flutter
+- PHP
+- SQL
+- C++
+- Javascript
+- Shellscript
+
