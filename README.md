@@ -3,8 +3,8 @@
 Repositorio da matéria LP-1
 
 # Desenvolvedor: 
-## Pedro Henrique Ferreira Dominichelli Fabris
-
+> Pedro Henrique Ferreira Dominichelli Fabris
+[//]: <> (comentario)
 
 # Linguagens e Frameworks
 - Java
