@@ -3,7 +3,7 @@ package Models;
 public class User extends Account{
 
     private String name;
-    private String password;
+    private int password;
     private String email;
 
 
@@ -16,11 +16,11 @@ public class User extends Account{
         this.name = name;
     }
 
-    public String getPassword() {
+    public int getPassword() {
         return password;
     }
 
-    public void setPassword(String password) {
+    public void setPassword(int password) {
         this.password = password;
     }
 
@@ -31,6 +31,17 @@ public class User extends Account{
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public void createUser(String name, int password, String email, int account_id, int balance){
+
+        this.setName(name);
+        this.setPassword(password);
+        this.setEmail(email);
+        this.setAccount_id(account_id);
+        this.setBalance(balance);
+
+    }
+
 
 
 }
