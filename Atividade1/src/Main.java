@@ -32,7 +32,9 @@ public class Main {
         ac3.createUser(ac1n, 938, ac3n+"@hotmail.com",0003,1000);
 
         ac1.showProfile();
+        System.out.println(" ");
         ac2.showProfile();
+        System.out.println(" ");
         ac3.showProfile();
     }
 
