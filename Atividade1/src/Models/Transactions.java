@@ -11,7 +11,7 @@ public class Transactions {
         return account.getAccount_id() + "; " + account.getName() + "; " + value + "; " + transaction_number;
     }
 
-    public void paymentByQRCode(User acc_receiver, User acc_payer, String qrcode){
+    public void paymentByQRCode(User acc_payer, User acc_receiver, String qrcode){
         String array[] = new String[4];
         array = qrcode.split(";");
         double bill = Double.parseDouble(array[2]);        

@@ -45,11 +45,15 @@ public class Main {
         System.out.println(" ");
         ac3.showProfile();
 
-        //TODO Realizar as transações como pedido no documento
+        //All transactions fot testing
 
         String qr_code1 = transactions.QRCodeGenerator(ac1, 250);
         System.out.println(qr_code1);
-        transactions.paymentByQRCode(ac1, ac2, qr_code1);
+        transactions.paymentByQRCode(ac2, ac1, qr_code1);
+        transactions.paymentByQRCode(ac3, ac1, qr_code1);
+        transactions.paymentByQRCode(ac2, ac1, qr_code1);
+        String qr_code2 = transactions.QRCodeGenerator(ac2, 1000);
+        transactions.paymentByQRCode(ac3, ac2, qr_code2);
 
         //Exibition of updated balance value from the accounts
         System.out.println("Estado Final:");
