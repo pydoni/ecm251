@@ -1,4 +1,5 @@
 import Models.User;
+import Models.Transactions;
 import java.util.Scanner;
 
 
@@ -14,6 +15,8 @@ public class Main {
         String ac1n;
         String ac2n;
         String ac3n;
+
+        Transactions transactions = new Transactions();
 
         ac1 = new User();
         ac2 = new User();
@@ -44,8 +47,7 @@ public class Main {
 
         //TODO Realizar as transações como pedido no documento
 
-        //---------------------------------
-
+        System.out.println(transactions.QRCodeGenerator(ac1, 250));
 
         //Exibition of updated balance value from the accounts
         System.out.println("Estado Final:");
@@ -56,6 +58,7 @@ public class Main {
         ac3.showProfile();
 
     }
+
 
 
 }
