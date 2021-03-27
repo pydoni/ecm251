@@ -30,6 +30,10 @@ public class Main {
         System.out.println("Digite o nome do usuario 3:");
         ac3n = read.next();
         ac3.createUser(ac1n, 938, ac3n+"@hotmail.com",0003,1000);
+
+        ac1.showProfile();
+        ac2.showProfile();
+        ac3.showProfile();
     }
 
 

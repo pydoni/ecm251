@@ -42,6 +42,20 @@ public class User extends Account{
 
     }
 
+    public void showProfile(){
+
+        System.out.println("#######################################################");
+        System.out.println("#                   ACCOUNT PROFILE                   #");
+        System.out.println("#                                                     #");
+        System.out.println("#   ACCOUNT ID:  "+this.getAccount_id());
+        System.out.println("#   USER:  "+this.name);
+        System.out.println("#   EMAIL:  "+this.email);
+        System.out.println("#   BALANCE:  "+this.getBalance());
+        System.out.println("#                                                     #");
+        System.out.println("#######################################################");
+
+    }
+
 
 
 }
