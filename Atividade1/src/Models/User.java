@@ -2,11 +2,15 @@ package Models;
 
 public class User extends Account{
 
+    // This is the class that sustains an user account, it inhereit the properties and attributes from the Account class
+
     private String name;
     private int password;
     private String email;
 
 
+
+    // Attributes encapsulation
 
     public String getName() {
         return name;
@@ -34,6 +38,8 @@ public class User extends Account{
 
     public void createUser(String name, int password, String email, int account_id, int balance){
 
+        //This function sets the user attributes
+
         this.setName(name);
         this.setPassword(password);
         this.setEmail(email);
@@ -43,6 +49,8 @@ public class User extends Account{
     }
 
     public void showProfile(){
+
+        //This function shows the account profile as required by the exercise
 
         System.out.println("#######################################################");
         System.out.println("#                   ACCOUNT PROFILE                   #");

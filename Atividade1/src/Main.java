@@ -6,6 +6,8 @@ public class Main {
 
     public static void main(String[] args) {
 
+
+        // Creating all the accounts
         User ac1;
         User ac2;
         User ac3;
@@ -31,11 +33,28 @@ public class Main {
         ac3n = read.next();
         ac3.createUser(ac3n, 938, ac3n+"@hotmail.com",0003,1000);
 
+
+        //Exibition of the accounts in their primary state
+        System.out.println("Estado Inicial:");
         ac1.showProfile();
         System.out.println(" ");
         ac2.showProfile();
         System.out.println(" ");
         ac3.showProfile();
+
+        //TODO Realizar as transações como pedido no documento
+
+        //---------------------------------
+
+
+        //Exibition of updated balance value from the accounts
+        System.out.println("Estado Final:");
+        ac1.showProfile();
+        System.out.println(" ");
+        ac2.showProfile();
+        System.out.println(" ");
+        ac3.showProfile();
+
     }
 
 
