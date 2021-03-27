@@ -1,6 +1,16 @@
+import Models.AccountsData;
+
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+
+        AccountsData contas;
+
+        contas = new AccountsData;
+
+        contas.
+
+
     }
 }
