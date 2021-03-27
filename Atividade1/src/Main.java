@@ -27,11 +27,11 @@ public class Main {
 
         System.out.println("Digite o nome do usuario 2:");
         ac2n = read.next();
-        ac2.createUser(ac2n, 651, ac2n+"@hotmail.com",0002,1000);
+        ac2.createUser(ac2n, 651, ac2n+"@hotmail.com",0002,250);
 
         System.out.println("Digite o nome do usuario 3:");
         ac3n = read.next();
-        ac3.createUser(ac3n, 938, ac3n+"@hotmail.com",0003,1000);
+        ac3.createUser(ac3n, 938, ac3n+"@hotmail.com",0003,3000);
 
 
         //Exibition of the accounts in their primary state
