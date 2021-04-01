@@ -1,3 +1,7 @@
+// Created by:
+// Pedro Henrique Ferreira Dominichelli Fabris 19.02482-7
+// Gabriel Marques Rangel da Silva 19.01288-8
+
 package Models;
 
 public abstract class Account {
