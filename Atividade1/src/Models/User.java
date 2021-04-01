@@ -43,7 +43,7 @@ public class User extends Account{
         this.setName(name);
         this.setPassword(password);
         this.setEmail(email);
-        this.setAccount_id(account_id);
+        this.setAccountId(account_id);
         this.setBalance(balance);
 
     }
@@ -55,7 +55,7 @@ public class User extends Account{
         System.out.println("#######################################################");
         System.out.println("#                   ACCOUNT PROFILE                   #");
         System.out.println("#                                                     #");
-        System.out.println("#   ACCOUNT ID:  "+this.getAccount_id());
+        System.out.println("#   ACCOUNT ID:  "+this.getAccountId());
         System.out.println("#   USER:  "+this.name);
         System.out.println("#   EMAIL:  "+this.email);
         System.out.println("#   BALANCE:  "+this.getBalance());

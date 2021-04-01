@@ -24,21 +24,21 @@ public class Main {
 
         Scanner read = new Scanner(System.in);
 
-        System.out.println("Digite o nome do usuario 1:");
+        System.out.println("Type the name of the first user:");
         ac1n = read.next();
         ac1.createUser(ac1n, 192, ac1n+"@hotmail.com",0001,1000);
 
-        System.out.println("Digite o nome do usuario 2:");
+        System.out.println("Type the name of the second user:");
         ac2n = read.next();
         ac2.createUser(ac2n, 651, ac2n+"@hotmail.com",0002,250);
 
-        System.out.println("Digite o nome do usuario 3:");
+        System.out.println("Type the name of the third user:");
         ac3n = read.next();
         ac3.createUser(ac3n, 938, ac3n+"@hotmail.com",0003,3000);
 
 
         //Exibition of the accounts in their primary state
-        System.out.println("Estado Inicial:");
+        System.out.println("Initial state:");
         ac1.showProfile();
         System.out.println(" ");
         ac2.showProfile();
@@ -47,16 +47,16 @@ public class Main {
 
         //All transactions fot testing
 
-        String qr_code1 = transactions.QRCodeGenerator(ac1, 250);
-        System.out.println(qr_code1);
-        transactions.paymentByQRCode(ac2, ac1, qr_code1);
-        transactions.paymentByQRCode(ac3, ac1, qr_code1);
-        transactions.paymentByQRCode(ac2, ac1, qr_code1);
-        String qr_code2 = transactions.QRCodeGenerator(ac2, 1000);
-        transactions.paymentByQRCode(ac3, ac2, qr_code2);
+        String qrCode1 = transactions.QRCodeGenerator(ac1, 250);
+        System.out.println(qrCode1);
+        transactions.paymentByQRCode(ac2, ac1, qrCode1);
+        transactions.paymentByQRCode(ac3, ac1, qrCode1);
+        transactions.paymentByQRCode(ac2, ac1, qrCode1);
+        String qrCode2 = transactions.QRCodeGenerator(ac2, 1000);
+        transactions.paymentByQRCode(ac3, ac2, qrCode2);
 
         //Exibition of updated balance value from the accounts
-        System.out.println("Estado Final:");
+        System.out.println("Final state:");
         ac1.showProfile();
         System.out.println(" ");
         ac2.showProfile();

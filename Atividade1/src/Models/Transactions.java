@@ -4,14 +4,21 @@ import java.util.Random;
 
 public class Transactions {
 
-    
-    //TODO implementar a classe de transações
+
     public String QRCodeGenerator(User account, double value){
-        int transaction_number = getRandomNumberInRange();
-        return account.getAccount_id() + "; " + account.getName() + "; " + value + "; " + transaction_number;
+
+        // Function to generate QR code that get account id,name,
+        // value of the transaction and generates a random transaction number
+
+
+        int transactionNumber = getRandomNumberInRange();
+        return account.getAccountId() + "; " + account.getName() + "; " + value + "; " + transactionNumber;
     }
 
     public void paymentByQRCode(User acc_payer, User acc_receiver, String qrcode){
+
+        //Function that splits the qdcode info to transfer the value from the payer account to the receiver account
+
         String array[] = new String[4];
         array = qrcode.split(";");
         double bill = Double.parseDouble(array[2]);        
@@ -25,6 +32,9 @@ public class Transactions {
     }
 
     private boolean verifyBalance(User acc, double bill){
+
+        // Function that verifies if the payer account has enough money to pay
+
         if (acc.getBalance() >= bill){
             return true;
         }
@@ -34,6 +44,9 @@ public class Transactions {
     }
 
     private static int getRandomNumberInRange(){
+
+        // Function that generates a random integer
+
         Random r = new Random();
         return r.nextInt((9999-1000)) + 1000 ;
     }
